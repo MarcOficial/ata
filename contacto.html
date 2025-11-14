@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto | ATA</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html">ATA</a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menú</button>
+        <ul id="primary-nav" class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="has-sub">
+            <a href="javascript:void(0)">Servicios</a>
+            <ul class="sub-menu">
+              <li><a href="servicios/moviles.html">Móviles</a></li>
+              <li><a href="servicios/portatiles.html">Portátiles</a></li>
+              <li><a href="servicios/tablets.html">Tablets</a></li>
+              <li><a href="servicios/ordenadores.html">Ordenadores</a></li>
+            </ul>
+          </li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#presupuesto">Solicitar presupuesto</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Contacto</h1>
+      <div class="cards">
+        <article class="card">
+          <h3>Datos</h3>
+          <ul class="tags">
+            <li>+34 971 XXX XXX</li>
+            <li>contacto@ata-tech.es</li>
+            <li>Palma de Mallorca</li>
+            <li>Lun–Vie: 9:00–20:00 · Sáb: 10:00–14:00</li>
+          </ul>
+        </article>
+        <article class="card" id="presupuesto">
+          <h3>Solicitar presupuesto</h3>
+          <form class="calc" action="#" method="post">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="tu@correo.com" required />
+            <label for="mensaje">Descripción del problema</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué sucede" required></textarea>
+            <button class="btn primary" type="submit" disabled>Enviar (demo)</button>
+            <p class="muted">Este formulario es estático para demo. Actívalo con un backend o servicios como Formspree.</p>
+          </form>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container legal"><small>© 2025 ATA</small></div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
